@@ -1,0 +1,54 @@
+{
+  "mmybank.accounts": {
+    "transaction": true,
+    "partition-key": [
+      "accountId"
+    ],
+    "columns": {
+      "accountId": "TEXT",
+      "balance": "INT"
+    }
+  },
+  "mmybank.transactions": {
+    "transaction": true,
+    "partition-key": [
+      "transactionId"
+    ],
+    "columns": {
+      "transactionId": "TEXT",
+      "fromTable": "TEXT",
+      "fromId": "TEXT",
+      "toTable": "TEXT",
+      "toId": "TEXT",
+      "amount": "INT",
+      "date": "TEXT",
+      "flag": "INT"
+    }
+  },
+  "pmybank.accounts": {
+    "transaction": true,
+    "partition-key": [
+      "accountId"
+    ],
+    "columns": {
+      "accountId": "TEXT",
+      "balance": "INT"
+    }
+  },
+  "pmybank.transactions": {
+    "transaction": true,
+    "partition-key": [
+      "transactionId"
+    ],
+    "columns": {
+      "transactionId": "TEXT",
+      "fromTable": "TEXT",
+      "fromId": "TEXT",
+      "toTable": "TEXT",
+      "toId": "TEXT",
+      "amount": "INT",
+      "date": "TEXT",
+      "flag": "INT"
+    }
+  }
+}
