@@ -7,6 +7,7 @@
 ---transactionId is unique.
 	-> fromId, toId, and date are not the same at the same time.
 	-> especially date is assumed not identical.
+	-> the transactionId is represented by a concatenation of fromId, toId, and date.
 
 ---the name of argument "table".
 	-> In the real world, "table" name is regarded as "bank" name.
